@@ -1,0 +1,15 @@
+@mixin borderBottomGradient($height)
+  display: block
+  content: ''
+  width: 100%
+  height: $height
+  background: linear-gradient(to right, $blue, $pink)
+
+%borderLeftHover
+  display: inline-block
+  content: ''
+  width: 0px
+  height: 20px
+  margin-right: 0px
+  background-color: $black
+  transition: width 0.3s ease, margin-right 0.7s ease

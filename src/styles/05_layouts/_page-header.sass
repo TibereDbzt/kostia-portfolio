@@ -1,0 +1,35 @@
+.page-header
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  padding-top: 20px
+  padding-bottom: 20px
+
+.page-header--nameLess
+  justify-content: flex-end
+  align-self: flex-end
+
+.page-header__name
+  color: $black
+
+  &::after
+    @include borderBottomGradient(6px)
+
+.page-header__nav
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+@media only screen and (max-width: 650px)
+  .mobile-page-header
+    position: fixed
+    top: 0
+    left: 0
+    background-color: $white
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+    z-index: 1
+    padding-top: 0
+    padding-bottom: 0
+    z-index: 3

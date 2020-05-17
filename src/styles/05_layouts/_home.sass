@@ -1,0 +1,61 @@
+.home-header__container
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+
+.video-bg__container
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  z-index: -1
+
+.video-bg
+  position: absolute
+  top: -5px
+  left: 50%
+  transform: translateX(-50%)
+  height: 100%;
+  width: 177.77777778vh;
+  min-width: 100%;
+  min-height: 56.25vw;
+
+.video-bg__controls
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 30px
+  cursor: pointer
+  opacity: 0.5
+  transition: 0.2s
+
+  &:hover
+    opacity: 1
+
+.video-bg__play-icon
+  display: block
+  width: 30px
+  height: 30px
+  clip-path: polygon(92% 48%, 16% 0, 16% 100%)
+  transform: rotate(-90)
+  background-color: $white
+
+.video-bg__label
+  color: $white
+  font-size: 25px
+
+.introduction__container
+  padding: 100px 0
+
+.introduction__title
+  color: $black
+
+.home-header__name
+
+  &::after
+    @include borderBottomGradient(9px)

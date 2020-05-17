@@ -1,0 +1,59 @@
+.service
+  width: 100%
+  margin: 100px 0
+
+.service__heading
+  width: 100%
+  text-align: center
+
+.service__content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 50px
+  margin-bottom: 60px
+
+.service__content--reverse
+  flex-direction: row-reverse
+
+.service__description--right
+  text-align: left
+  margin-right: 3%
+
+.service__description--left
+  text-align: right
+  margin-left: 3%
+
+.service__thumbnail
+  width: 674px
+  height: 380px
+
+.service__thumbnail--right
+  margin-left: 3%
+
+.service__thumbnail--left
+  margin-right: 3%
+
+@media only screen and (max-width: 1250px)
+  .service__thumbnail
+    width: 400px
+    height: auto
+
+@media only screen and (max-width: 800px)
+  .service
+    margin: 50px 0
+  
+  .service__content
+    flex-direction: column-reverse
+    margin-top: 20px
+    margin-bottom: 20px
+
+  .service__description--left, .service__description--right
+    text-align: left
+    margin: 25px 0
+
+  .service__thumbnail
+    width: 100%
+
+  .service__thumbnail--right, .service__thumbnail--left
+    margin: 0
