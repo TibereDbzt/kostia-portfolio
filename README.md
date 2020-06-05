@@ -1,4 +1,4 @@
-# kostia-portfolio
+# Portfolio Kostia Ratel
 
 Intégration du portfolio du vidéaste Kostia Ratel.
 
