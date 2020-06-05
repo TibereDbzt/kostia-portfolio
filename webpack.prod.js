@@ -9,7 +9,7 @@ const PATHS = {
     dist: path.join(__dirname, '/dist'),
 };
 
-new webpack.EnvironmentPlugin(['NODE_ENV']);
+//new webpack.EnvironmentPlugin(['NODE_ENV']);
 
 let config = {
 
@@ -26,7 +26,10 @@ let config = {
         rules: [
             {
                 test: /\.html$/,
-                use: 'html-loader'
+                loader: 'html-loader',
+                options: {
+                  attrs: [":src"]
+                }
             },
             {
                 test: /\.js$/,
@@ -68,24 +71,24 @@ let config = {
       //   }
       // },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash:6].[ext]',
-              emitFile: true,
-              esModule: false,
-              enforce: 'pre'
-            }
-          },
-          // {
-          //   loader: 'webp-loader',
-          //   options: {
-          //     quality: 100
-          //   }
-          // }
-        ]
+        test: /\.(gif|png|jpg|jpeg|svg)$/i,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'assets/images/',
+            esModule: false,
+          }
+        }]
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets/videos/',
+          esModule: false,
+        }
       },
       {
         test: /\.(woff(2)?|ttf|eot)$/,
@@ -93,7 +96,8 @@ let config = {
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]',
+              name: '[name].[ext]',
+              outputPath: 'assets/fonts/',
               esModule: false,
             },
           }
@@ -103,13 +107,41 @@ let config = {
     },
 
     plugins: [
-      new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html',
         filename: 'index.html'
       }),
+      new HtmlWebpackPlugin({
+        template: './src/services.html',
+        filename: 'services.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/portfolio.html',
+        filename: 'portfolio.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/contact.html',
+        filename: 'contact.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/en_index.html',
+        filename: 'en_index.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/en_services.html',
+        filename: 'en_services.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/en_portfolio.html',
+        filename: 'en_portfolio.html'
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/en_contact.html',
+        filename: 'en_contact.html'
+      }),
+      new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
-        filename: `style.css`
+        filename: `main.css`
       })
     ]
 };

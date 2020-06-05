@@ -4,74 +4,67 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="icon" type="image/x-icon" href="./src/assets/images/favicon.jpg" />
+     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.jpg" />
      <title>Kostia Ratel</title>
 </head>
 <body>
+     
+     <div id="swup">
 
-     <div class="home-header__container">
-          <div class="video-bg__container">
-               <video class="video-bg" autoplay loop>
-                    <source src="./assets/videos/full-low.mov">
-                    Your browser does not support the video tag.
-               </video>
-          </div>
-
-          <header class="wrapper page-header page-header--nameLess">
-               <nav class="page-header__nav">
-                    <ul class="menu__list">
-                      <li class="menu__item menu__item menu__item--active"><a href="/services.html">services</a></li>
-                      <li class="menu__item menu__item"><a href="/portfolio.html">portfolio</a></li>
-                      <li class="menu__item menu__item"><a href="/contact.html">contact</a></li>
-                      <li class="menu__item menu__item--light langage-btn__container"><button id="langage-btn" class="langage-btn langage-btn" href="/en_services.html">en</button></li>
-                    </ul>
-                </nav>
-                <div class="mobile-items">
-                    <a id="langage-btn" class="langage-btn langage-btn" href="/en_services.html">en</a>
-            
-                    <svg id="menu-icon" class="mobile-menu__icon" height="20px" viewBox="0 -21 384 384" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="m362.667969 0h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0"/><path d="m362.667969 128h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0"/><path d="m362.667969 256h-341.335938c-11.753906 0-21.332031 9.578125-21.332031 21.332031v42.667969c0 11.753906 9.578125 21.332031 21.332031 21.332031h341.335938c11.753906 0 21.332031-9.578125 21.332031-21.332031v-42.667969c0-11.753906-9.578125-21.332031-21.332031-21.332031zm0 0"/></svg>
-                  </div>
-                <nav id="mobile-menu" class="mobile-menu">
-                    <ul class=" mobile-menu__list">
-                        <li class="mobile-menu__item menu__item"><a href="/services.html">services</a></li>
-                        <li class="mobile-menu__item menu__item"><a href="/portfolio.html">portfolio</a></li>
-                        <li class="mobile-menu__item menu__item"><a href="/contact.html">contact</a></li>
-                    </ul>
-                    <svg id="close-icon" enable-background="new 0 0 512.001 512.001" height="20px" viewBox="0 0 512.001 512.001" width="25px" xmlns="http://www.w3.org/2000/svg"><g><path d="m512.001 84.853-84.853-84.853-171.147 171.147-171.148-171.147-84.853 84.853 171.148 171.147-171.148 171.148 84.853 84.853 171.148-171.147 171.147 171.147 84.853-84.853-171.148-171.148z"/></g></svg>
-               </nav>
-          </header>
-
-          <div>
-               <h1 class="home-header__name">kostia ratel</h1>
-          </div>
-          <div id="vimeo-controls" class="video-bg__controls">
-               <span class="video-bg__play-icon"></span>
-               <h3 class="video-bg__label">demo réelle</h3>
-          </div>
-
-     </div>
-
-     <div id="vimeo" class="vimeo__container">
-          <iframe id="vimeo-player" class="vimeo__player" src="https://player.vimeo.com/video/410922836?color=1F445B&title=0&byline=0&portrait=0&muted=1" width="1300" height="732" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-     </div>
-
-
-     <main id="swup" class="wrapper">
-          <div class="introduction__container">
-               <h1 class="introduction__title">Création d'images</h1>
-               <p class="introduction__text">Basé dans la vallée de Bourg Saint Maurice au coeur des Alpes, je me suis spécialisé dans la réalisation et la création d’images que ce soit de la prise de vue ou de l'étalonnage, particulièrement dans le milieu des sports de montagnes, de glisse et de l’outdoor.</p>
-          </div>
-     </main>
-
-     <footer class="wrapper page-footer">
-          <div class="page-footer__container">
-               <a class="page-footer__link" href="/contact.html">contact</a>
-               <div class="page-footer__deco">
-                 <span class="line line-blue"></span>
-                 <span class="line line-pink"></span>
-                 <span class="line line-yellow"></span>
+          <div class="home-header__container">
+               <div class="video-bg__container">
+                    <video class="video-bg" autoplay loop muted>
+                         <source src="./assets/videos/full-low.mp4">
+                         <source src="./assets/videos/full-low.mov">
+                         Your browser does not support the video tag.
+                    </video>
                </div>
+
+               <header class="wrapper page-header page-header--nameLess">
+                    <nav class="page-header__nav page-header__nav--solid">
+                         <ul class="menu__list">
+                              <li class="menu__item nav__item menu__item--light"><a href="./services.html">services</a></li>
+                              <li class="menu__item nav__item menu__item--light"><a href="./portfolio.html">portfolio</a></li>
+                              <li class="menu__item nav__item menu__item--light"><a href="./contact.html">contact</a></li>
+                              <li class="menu__item menu__item--light langage-btn__container"><a class="langage-btn langage-btn--light" href="./en_index.html">en</a></li>
+                         </ul>
+                    </nav>
+               </header>
+
+               <div>
+                    <h1 class="home-header__name">kostia ratel</h1>
+               </div>
+               <div id="vimeo-controls" class="video-bg__controls">
+                    <span class="video-bg__play-icon"></span>
+                    <h3 class="video-bg__label">demo réelle</h3>
+               </div>
+
           </div>
-     </footer>
+
+          <div id="vimeo" class="vimeo__container">
+               <iframe id="vimeo-player" class="vimeo__player" src="https://player.vimeo.com/video/410922836?color=1F445B&title=0&byline=0&portrait=0&muted=1" width="1300" height="732" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+               </iframe>
+          </div>
+
+
+          <main class="wrapper home">
+               <div class="introduction__container">
+                    <h1 class="introduction__title">Création d'images</h1>
+                    <p class="introduction__text">Basé dans la vallée de Bourg Saint Maurice au coeur des Alpes, je me suis spécialisé dans la réalisation et la création d’images que ce soit de la prise de vue ou de l'étalonnage, particulièrement dans le milieu des sports de montagnes, de glisse et de l’outdoor.</p>
+               </div>
+          </main>
+
+          <footer class="wrapper page-footer">
+               <div class="page-footer__container">
+                    <a class="page-footer__link" href="./contact.html">contact</a>
+                    <div class="page-footer__deco">
+                    <span class="line line-blue"></span>
+                    <span class="line line-pink"></span>
+                    <span class="line line-yellow"></span>
+                    </div>
+               </div>
+          </footer>
+
+     </div>
 </body>
 </html>

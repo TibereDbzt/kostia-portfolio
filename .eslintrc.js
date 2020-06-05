@@ -31,7 +31,7 @@ module.exports = {
     "arrow-spacing": ["warn", {"before": true, "after": true}],
     "block-spacing": ["warn", "always"],
     "brace-style": ["warn", "1tbs", {"allowSingleLine": true}],
-    "camelcase": ["warn", {"properties": "never"}],
+  //"camelcase": ["warn", {"properties": "never"}],
     "comma-dangle": ["warn", "only-multiline"],
     "comma-spacing": ["warn", {"before": false, "after": true}],
     "comma-style": ["warn", "last"],
@@ -43,7 +43,7 @@ module.exports = {
     "func-call-spacing": ["warn", "never"],
     "generator-star-spacing": ["warn", {"before": true, "after": true}],
     "handle-callback-err": ["warn", "^(err|error)$"],
-    "indent": ["warn", 4, {
+    "indent": ["warn", 2, {
       "SwitchCase": 1,
       "VariableDeclarator": 1,
       "outerIIFEBody": 1,
@@ -167,7 +167,7 @@ module.exports = {
     "semi-spacing": ["warn", {"before": false, "after": true}],
     "space-before-blocks": ["warn", "always"],
     "space-before-function-paren": ["warn", "always"],
-    "space-in-parens": ["warn", "never"],
+  //"space-in-parens": ["warn", "never"],
     "space-infix-ops": "warn",
     "space-unary-ops": ["warn", {"words": true, "nonwords": false}],
     "spaced-comment": ["warn", "always", {
